@@ -1,6 +1,6 @@
 # 01-Unix-Command-Line
-Zulfiqar Fauzul Akbar
-group 04
+Zulfiqar Fauzul Akbar</br>
+group 04</br>
 Greenpeace
 
 ## Daftar Isi
@@ -81,7 +81,7 @@ cat cv.txt
 ```
 ![Screenshot from 2021-09-13 20-57-37](https://user-images.githubusercontent.com/62832487/133100949-1be5d4e4-03b8-42a6-bca2-16ab853d10c3.png)
 
-# Soal 5
+# Soal 6
 ## Penjelasan
 memindahkan `portfolio.txt` dari folder `sekolah` ke folder `kerja`
 ## Penyelesaian

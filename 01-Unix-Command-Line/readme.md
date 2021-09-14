@@ -53,7 +53,7 @@ touch portfolio.txt
 printf "Saya pernah bekerja pada beberapa perusahaan salah satu \ndiantaranya ialah\n\n- Google\n- Tesla\n- Microsoft\n" > portfolio.txt
 cat portfolio.txt 
 ```
-![Screenshot from 2021-09-13 20-54-45](https://user-images.githubusercontent.com/62832487/133100307-008a2054-e94b-4986-bd45-3e9a8b0681ab.png)
+![Screenshot from 2021-09-14 10-00-37](https://user-images.githubusercontent.com/62832487/133188054-6773aad5-3cc6-4289-8da9-d7a075b14987.png)
 
 # Soal 4
 ## Penjelasan

@@ -1,0 +1,28 @@
+1.
+mkdir zulfiqar
+cd zulfiqar
+
+2. 
+mkdir sekolah kerja
+ls
+
+3.
+cd sekolah
+touch ijazah.txt
+printf "Perkenalkan namaku Zulfiqar\n\nAku berasal dari Surabaya\n\nSalam Kenal :D\n" > ijazah.txt 
+cat ijazah.txt 
+touch portfolio.txt
+printf "Saya pernah bekerja pada beberapa perusahaan salah satu \ndiantaranya ialah\n\n- Google\n- Tesla\n- Microsoft\n" > ijazah.txt
+cat ijazah.txt 
+
+4.
+cd ..
+
+5.
+cd kerja
+touch cv.txt
+printf "Salam,\n\nPerkenalkan namaku Zulfiqar, saya memiliki kegemaran\n- Main Game\n- Tidur\n- Mager\n" > cv.txt
+cat cv.txt
+
+6.
+mv ../sekolah/portfolio.txt .

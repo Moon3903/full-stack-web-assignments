@@ -50,8 +50,8 @@ cat ijazah.txt
 lalu membuat file bernama `portfolio.txt` dengan `touch` dan mengisinya setelah itu di tampilkan dengan command `cat`.
 ```
 touch portfolio.txt
-printf "Saya pernah bekerja pada beberapa perusahaan salah satu \ndiantaranya ialah\n\n- Google\n- Tesla\n- Microsoft\n" > ijazah.txt
-cat ijazah.txt 
+printf "Saya pernah bekerja pada beberapa perusahaan salah satu \ndiantaranya ialah\n\n- Google\n- Tesla\n- Microsoft\n" > portfolio.txt
+cat portfolio.txt 
 ```
 ![Screenshot from 2021-09-13 20-54-45](https://user-images.githubusercontent.com/62832487/133100307-008a2054-e94b-4986-bd45-3e9a8b0681ab.png)
 

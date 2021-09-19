@@ -3,9 +3,7 @@
 1. What does `git clean` do? <br>
 `git-clean` - Remove untracked files from the working tree
 Cleans the working tree by recursively removing files that are not under version control, starting from the current directory.<br>
-
 Normally, only files unknown to Git are removed, but if the -x option is specified, ignored files are also removed. This can, for example, be useful to remove all build products.<br>
-
 If any optional `<path>...` arguments are given, only those paths are affected.<br>
 
 2. What do the `-d` and `-f` flags for `git clean` do?<br>

@@ -2,7 +2,7 @@
 SET word TO INPUT()
 
 SET a TO 0
-SET b TO len(word)-1
+SET b TO length(word)-1
 SET flag TO 1
 
 WHILE a < b :

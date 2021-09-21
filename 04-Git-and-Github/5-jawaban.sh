@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git clone https://github.com/Moon3903/git-basic.git
 git branch zulfiqar-fauzul-akbar
 git checkout zulfiqar-fauzul-akbar

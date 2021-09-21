@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir git-basic
 cd git-basic
 touch first.txt

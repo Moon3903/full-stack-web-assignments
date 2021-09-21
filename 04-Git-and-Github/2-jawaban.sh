@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir zulfiqar
 touch README.md
 printf("Halo perkenalkan aku halaman utama") > README.md

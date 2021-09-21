@@ -4,7 +4,6 @@
 `git reset`<br>
 This command is somewhat complicated. It actually does a couple of different things depending on how it is invoked. The command modifies the index (the so-called “staging area”). 
 It can also change which commit a branch head is currently pointing at. This command may alter existing history (by changing the commit that a branch references).<br>
-
 `git revert`<br>
 This command can be considered an ‘undo’ type command. However, it is not a traditional undo operation. Instead of removing the commit from the project history, it figures out 
 how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content. This prevents Git from losing history, which is important for the 
@@ -22,8 +21,6 @@ When you use Git merge, only the target branch is changed. The source branch his
 `git rebase`<br>
 Git rebase is a command that allows developers to integrate changes from one branch to another. Git rebase compresses all the changes into a single “patch.” Then it integrates the 
 patch onto the target branch. Unlike merging, rebasing flattens history. It transfers the completed work from one branch to another. In the process, unwanted history is eliminated.<br>
-
 Advocates of Git rebase like it because it simplifies their review process.<br>
-
 Difference?<br>
 Git rebase and merge both integrate changes from one branch into another. Where they differ is how it's done. Git rebase moves a feature

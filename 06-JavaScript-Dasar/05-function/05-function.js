@@ -27,6 +27,8 @@ function taxCalc(salary) {
     return salary*0.2;
 }
 
+// console.log(taxCalc(10000000));
+
 /// Soal - 02
 /// BMI merupakan sebuah perhitungan yang mana dapat menunjukan apakah seseorang 
 // itu masuk dalam kategori obesitas atau tidak. Kamu diminta untuk membuat sebuah 
@@ -48,26 +50,52 @@ function taxCalc(salary) {
 ///   (weight/(height^2)) * 10000
 
 /// EDIT HERE
-function checkBMI(height,weight) { 
-    bmi = (weight/(height^2)) * 10000;
+function checkBMI(weight,height) { 
+    bmi = (weight/(height*height)) * 10000;
+
     if (bmi < 18.5){
-        return 
+        return "under weight";
     }
+    if (bmi < 24.9){
+        return "normal";
+    }
+    if (bmi < 29.9){
+        return "over weight";
+    }
+    if (bmi < 34.9){
+        return "obese";
+    }
+    return "extremely obese";
 }
 
+// console.log(checkBMI(80,160));
 
-// /// Soal - 03
-// /// Buatlah sebuah fungsi yang akan merubah huruf pertama disetiap kata menjadi huruf besar
 
-// /// Parameter
-// /// - (String) sentence => kalimat yang nanti akan diubah
+/// Soal - 03
+/// Buatlah sebuah fungsi yang akan merubah huruf pertama disetiap kata menjadi huruf besar
 
-// /// Return Value
-// /// - (String) kalimat yang sudah kita ubah huruf pertamanya menjadi huruf besar
+/// Parameter
+/// - (String) sentence => kalimat yang nanti akan diubah
 
-// /// EDIT HERE
-// function convToUpperCase(....) { .... }
+/// Return Value
+/// - (String) kalimat yang sudah kita ubah huruf pertamanya menjadi huruf besar
 
+/// EDIT HERE
+function convToUpperCase(str) {
+    let space = true;
+    for(let i=0; i < str.length; i++){
+        if(space){
+            space = false;
+            str = str.slice(0,i) + str.charAt(i).toUpperCase() + str.slice(i+1);
+        }
+        if(str[i]==" "){
+            space = true;
+        }
+    }
+    return str;
+}
+
+// console.log(convToUpperCase("hello bandung"));
 
 /// Soal - 04
 /// Buatlah sebuah fungsi yang mana nanti akan mengembalikan HURUF PERTAMA YANG TIDAK KEMBAR
@@ -92,7 +120,7 @@ function firstNonRepeatedChar(str) {
     // }
     for(let i = 0; i<str.length ; i++){
         if(str[i] == " "){
-            return "kata tidak boleh dipisah";;
+            return "kata tidak boleh dipisah";
         }
         if(!data[str[i]]){
             data[str[i]] = 1;
@@ -109,4 +137,4 @@ function firstNonRepeatedChar(str) {
     return "";
 }
 
-console.log(firstNonRepeatedChar("alloha"));
+// console.log(firstNonRepeatedChar("alloha"));

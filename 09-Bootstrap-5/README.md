@@ -1,4 +1,6 @@
 # 09-Bootstrap-5
+## Soal - 02
+[Demo](https://moon3903.github.io/full-stack-web-assignments/09-Bootstrap-5/09-bootstrap-soal-02.html)
 ## Soal - 01
 Kamu diminta untuk melakukan analisa sederhana terhadap beberapa masalah dan tuliskan jawaban kamu di dalam file `08-bootstrap-soal-01.txt`.
 1. Apa itu `CSS Framework`?

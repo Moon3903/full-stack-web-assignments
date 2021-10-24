@@ -11,7 +11,7 @@ class MovieCard extends Component {
 
     render() {
       return (
-        <div className="col-6 my-3">
+        <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
             {this.connection}
             <div className="card h-100">
                 <img

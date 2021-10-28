@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const CartListItem = ({ name, price, amount, increase, decrease }) => {
   return (
     <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -19,6 +21,23 @@ const CartListItem = ({ name, price, amount, increase, decrease }) => {
       </div>
     </li>
   );
+};
+
+CartListItem.propTypes = {
+  name: PropTypes.string,
+  price: PropTypes.number,
+  amount: PropTypes.number,
+  increase: PropTypes.func,
+  decrease: PropTypes.func
+};
+
+CartListItem.defaultProps = {
+  increase: function () {
+    console.log("");
+  },
+  decrease: function () {
+    console.log("");
+  }
 };
 
 export default CartListItem;

@@ -5,7 +5,7 @@ const CardContainer = styled.div`
   border-width: 1px;
   border-style: solid;
   border-radius: 0.5em;
-  width: ${(props) => (props.width ? "100%" : props.width)};
+  width: ${(props) => (props.width || "100%" )};
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
@@ -19,6 +19,9 @@ const CardImage = styled.img`
 
 const CardBody = styled.div`
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const CardPrice = styled.h5`

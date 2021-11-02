@@ -12,10 +12,10 @@ export default function App() {
         <Navbar />
         <div className="container">
           <Switch>
-            <Route path="*" component={NotFound} />
-            <Route path="/movies/:id" component={Movie} />
-            <Route path="/" component={Home} />
-            <Route path="/movies" component={MovieList} />
+            <Route path="/" component={Home} exact/>
+            <Route path="/movies" component={MovieList} exact/>
+            <Route path="/movies/:id" component={Movie} exact/>
+            <Route path="*" component={NotFound} exact/>
           </Switch>
         </div>
       </BrowserRouter>

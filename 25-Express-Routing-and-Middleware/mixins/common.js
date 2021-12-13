@@ -1,23 +1,30 @@
 module.exports = {
     name: 'common',
-    // before: (ctx) => {
-    //     // validator
-    //     if (ctx.action.validator && typeof ctx.action.validator === 'object') {
-    //         const validate = (new Validator()).compile(ctx.action.validator);
-    //         const isValid = validate(ctx.payload);
-    //         if (isValid !== true) {
-    //             ctx.status = 400;
-    //             throw new Error(JSON.stringify(isValid));
-    //         }
-    //     }
-    // },
-    // after: (ctx, response) => {
-    //     // serialize response
-    //     ctx.response = {
-    //         message: `success ${ctx.action.name} ${ctx.service.name}`,
-    //         result: response,
-    //     }
-    // },
+    before: (ctx) => {
+        if (ctx.action.name === "create") {
+            const allowedSpesies = ['kucing', 'anjing', 'kelinci'];
+            const spesies = ctx.payload?.body?.spesies;
+    
+            if (!allowedSpesies.includes(spesies)) {
+                throw new Error('Spesies not valid');
+            }
+        }
+        // validator
+        // if (ctx.action.validator && typeof ctx.action.validator === 'object') {
+        //     const validate = (new Validator()).compile(ctx.action.validator);
+        //     const isValid = validate(ctx.payload);
+        //     if (isValid !== true) {
+        //         ctx.status = 400;
+        //         throw new Error(JSON.stringify(isValid));
+        //     }
+        // }
+    },
+    after: (ctx, response) => {
+        ctx.response = {
+            message: ctx.action.responseMessage,
+            [ctx.action.resultName || 'result']: response,
+        }
+    },
     onError: (ctx, err) => {
         let message = err.message;
         try {

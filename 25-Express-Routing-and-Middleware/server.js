@@ -3,8 +3,6 @@ const express = require('express');
 const hewanService = require('./domains/hewan').service;
 const tumbuhanService = require('./domains/tumbuhan').service;
 
-const middlewares = require('./middlewares');
-
 // domains
 const user = require('./domains/users');
 
@@ -12,7 +10,10 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(middlewares.logger);
+app.use((req, res, next) => {
+  console.log(`[${new Date().toString()}] ${req.method} "${req.url}": ${JSON.stringify(req.headers["user-agent"])}`);
+  next();
+});
 
 app.use('/hewan', hewanService);
 app.use('/tumbuhan', tumbuhanService);

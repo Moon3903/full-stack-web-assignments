@@ -5,9 +5,7 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Email**
 - **Phone Number**
-<br>
 `one to one`
-<br>
 ```
 {
     "_id": "ObjectId('AAA')",
@@ -22,9 +20,7 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Phone Number**
 - **Address (Max 2)**
-<br>
 `one to many`
-<br>
 ```
 {
     "_id": "ObjectId('AAA')",
@@ -62,9 +58,9 @@ Color: Navy
 Quantity: 10
 
 Price: Rp 99.000
-<br>
+
 `one to many`
-<br>
+
 ```
 {
     "_id": "ObjectId('AA')",
@@ -111,10 +107,8 @@ Contoh Data yang dibutuhkan:
   - Spiderman No Way Home
 - Location: Mall Kelapa Gading
 
-<br>
 
-`one to many`
-<br>
+one to many
 ```
 {
     "_id": "ObjectId('C1')",

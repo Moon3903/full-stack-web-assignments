@@ -7,6 +7,7 @@ Data yang dibutuhkan adalah:
 - **Phone Number**
 <br>
 `one to one`
+<br>
 ```
 {
     "_id": "ObjectId('AAA')",
@@ -23,6 +24,7 @@ Data yang dibutuhkan adalah:
 - **Address (Max 2)**
 <br>
 `one to many`
+<br>
 ```
 {
     "_id": "ObjectId('AAA')",
@@ -62,7 +64,7 @@ Quantity: 10
 Price: Rp 99.000
 <br>
 `one to many`
-
+<br>
 ```
 {
     "_id": "ObjectId('AA')",
@@ -108,9 +110,11 @@ Contoh Data yang dibutuhkan:
   - Venom 2
   - Spiderman No Way Home
 - Location: Mall Kelapa Gading
+
 <br>
 
 `one to many`
+<br>
 ```
 {
     "_id": "ObjectId('C1')",

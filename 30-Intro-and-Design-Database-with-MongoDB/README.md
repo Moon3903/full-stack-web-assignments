@@ -5,6 +5,7 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Email**
 - **Phone Number**
+<br>
 `one to one`
 ```
 {
@@ -20,6 +21,7 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Phone Number**
 - **Address (Max 2)**
+<br>
 `one to many`
 ```
 {
@@ -58,7 +60,7 @@ Color: Navy
 Quantity: 10
 
 Price: Rp 99.000
-
+<br>
 `one to many`
 
 ```
@@ -106,9 +108,9 @@ Contoh Data yang dibutuhkan:
   - Venom 2
   - Spiderman No Way Home
 - Location: Mall Kelapa Gading
+<br>
 
-
-one to many
+`one to many`
 ```
 {
     "_id": "ObjectId('C1')",
